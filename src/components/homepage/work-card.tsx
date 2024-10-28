@@ -46,7 +46,7 @@ export const WorkCard = (item: {
                     className=" rounded-3xl px-[clamp(0.8rem,7vw,2rem)] py-[clamp(,0.5rem,7vw,2rem)] "
                     variant="white"
                   >
-                    <div className=" flex gap-2">
+                    <div className=" flex gap-2 items-center">
                       <p className="font-semibold text-[clamp(0.5rem,2vw,1.1rem)]">
                         Open
                       </p>
