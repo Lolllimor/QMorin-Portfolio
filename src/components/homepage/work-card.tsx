@@ -4,8 +4,8 @@ import useWindowSize from '@/hooks/useWindowSize';
 import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 
-import { Button } from '../ui/button';
 import Link from 'next/link';
+import { Button } from '../ui/button';
 
 export const WorkCard = (item: {
   type: string;

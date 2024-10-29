@@ -18,7 +18,7 @@ const Work = () => {
                   href={
                     item.title === 'UI/UX Design'
                       ? '/case-study'
-                      : item.url || item.title === 'Brand Design'
+                      : item.title === 'Brand Design'
                       ? '/works'
                       : item.url
                   }
