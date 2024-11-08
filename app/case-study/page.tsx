@@ -20,7 +20,7 @@ function CaseStudy() {
             alt={item.name}
             width={100}
             height={100}
-            className="h-full w-full rounded-lg"
+            className=" w-full object-fit h-[clamp(8rem,38vw,34rem)] rounded-lg"
           />
         </a>
       ))}

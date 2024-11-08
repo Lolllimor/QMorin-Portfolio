@@ -15,11 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className=" pt-[clamp(0.5rem,2vw,1.7rem)] flex flex-col px-[clamp(0.5rem,6vw,5rem)]">
-          <Navbar>
-            {children}
-            <Footer />
-          </Navbar>
+        <div className=" pt-[clamp(0.5rem,2vw,1.7rem)] flex flex-col pl-[clamp(0.5rem,6vw,5rem)]">
+          <Navbar />
+          {children}
+          <Footer />
         </div>
       </body>
     </html>

@@ -13,10 +13,10 @@ import {
 } from '../ui/dropdown-menu';
 import { usePathname } from 'next/navigation';
 
-export const Navbar = ({ children }: { children: React.ReactNode }) => {
+export const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full pr-[clamp(0.5rem,6vw,5rem)]">
       <section
         id="navbar"
         className="flex items-center border-b-[1px] border-white h-fit py-4 w-full justify-between "
@@ -36,7 +36,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   pathname.includes(item.name) && 'font-bold'
                 }`}
               >
-                <p className=''></p>
+                <p className=""></p>
                 {item.label}
               </Button>
             </Link>
@@ -52,7 +52,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://drive.google.com/file/d/18m4AO-PBBSi0Cyc0e7h_ZHEhpF_Z-2X5/view?usp=sharing"
-            className=" text-[clamp(10px, 0.2vw, 14px)] !font-bold"
+          className=" text-[clamp(0.8rem,1vw,1rem)] !font-bold"
           >
             View Resume
           </a>
@@ -74,7 +74,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   <DropdownMenuItem>
                     <a
                       href={item.href}
-                       className={`${
+                      className={`${
                         pathname.includes(item.name) && 'font-bold'
                       }`}
                     >
@@ -88,7 +88,6 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
           </DropdownMenu>
         </div>
       </section>
-      {children}
     </div>
   );
 };

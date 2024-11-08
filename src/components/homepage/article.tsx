@@ -44,7 +44,7 @@ export const Article = () => {
   ) : (
     <Carousel>
       <div className="py-[clamp(0.5rem,6vw,4.5rem)] flex gap-10 flex-col">
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between mr-[clamp(0.5rem,6vw,5rem)] ">
           <p className="text-[clamp(0.8rem,2vw,1.5rem)]">ARTICLES</p>
           <div className="flex ">
             <CarouselPrevious />
@@ -52,7 +52,7 @@ export const Article = () => {
           </div>
         </div>
 
-        <CarouselContent className="flex gap-5">
+        <CarouselContent className="flex gap-2">
           {articleData.map((item, idx) => (
             <CarouselItem className="basis-1/2 w-full">
               <ArticleCard

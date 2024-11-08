@@ -23,7 +23,7 @@ export const WorkCard = (item: {
       {windowSize.width > 640 ? (
         <div className="container">
           <div className="card-wrapper flip-right  ">
-            <div className="card w-[clamp(10.5rem,30vw,24.5rem)] h-[clamp(12.5rem,40vw,24.5rem)] ">
+            <div className="card w-[clamp(12.5rem,40vw,24.5rem)] h-[clamp(12.5rem,40vw,24.5rem)] ">
               <div className="front flex flex-col hover:rounded-lg  border-white border gap-[10px] p-5">
                 <p className="text-[clamp(0.5rem,2vw,1.2rem)] font-medium w-full text-center px-1">
                   {item.type.toUpperCase()}
@@ -77,7 +77,7 @@ export const WorkCard = (item: {
               <p className="font-semibold text-[clamp(0.5rem,2.5vw,1.1rem)]">
                 Open
               </p>
-              <ExternalLink className="size-0" />
+            <ExternalLink className="size-2" />
             </Button>
           </a>
         </div>

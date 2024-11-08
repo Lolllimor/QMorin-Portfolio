@@ -2,7 +2,7 @@ import { ExternalLink } from 'lucide-react';
 
 export const Works = () => {
   return (
-    <section className="flex  py-[clamp(0.5rem,6vw,4.5rem)] border-b border-white w-full max-[500px]:flex-col sm:gap-0 gap-6">
+    <section className="flex  py-[clamp(0.5rem,6vw,4.5rem)] border-b border-white  max-[500px]:flex-col sm:gap-0 gap-6 mr-[clamp(0.5rem,6vw,5rem)]">
       <div className="flex justify-between w-2/3 h-full sm:border-r sm:border-white pr-3 ">
         <p className="text-[clamp(0.8rem,2vw,1.5rem)]">What I do</p>
         <ExternalLink className="sm:flex hidden rotate-180 scale-x-[-1]" />

@@ -19,12 +19,12 @@ export const Tools = () => {
   const windowSize = useWindowSize();
   const star = '/images/star.png';
   return (
-    <section className="flex border-t mt-[clamp(0.5rem,2vw,4rem)]  py-[clamp(0.5rem,6vw,4.5rem)]  border-white w-full max-[500px]:flex-col sm:gap-0 gap-6">
+    <section className="flex pb-[clamp(0.5rem,6vw,4.5rem)] max-[500px]:flex-col sm:gap-0 gap-6 ">
       {windowSize.width > 640 ? (
         <div className="flex flex-col gap-10 w-full">
-          <div className="flex justify-between w-full items-center">
+          <div className="border-t border-white mt-[clamp(0.5rem,2vw,4rem)]  mb-[clamp(0.5rem,6vw,4.5rem)] mr-[clamp(0.5rem,6vw,5rem)]"></div>
+          <div className="flex justify-between w-full items-center mr-[clamp(0.5rem,6vw,5rem)]">
             <p className="text-[clamp(0.8rem,2vw,1.5rem)]">TOOLS</p>
-           
           </div>
           <ScrollArea className="w-full overflow-x-auto ">
             <div className="flex gap-5 no-scrollbar">
@@ -46,28 +46,29 @@ export const Tools = () => {
         </div>
       ) : (
         <Carousel>
-          <div className="flex flex-col gap-10 w-full">
-            <div className="flex justify-between w-full items-center">
+          <div className="flex flex-col  w-full">
+            <div className="border-t border-white mt-[clamp(0.5rem,2vw,4rem)]  mb-[clamp(0.5rem,6vw,4.5rem)] mr-[clamp(0.5rem,6vw,5rem)]"></div>
+            <div className="flex justify-between  items-center mb-10 mr-[clamp(0.5rem,6vw,5rem)]">
               <p className="text-[clamp(0.8rem,2vw,1.5rem)]">TOOLS</p>
               <div className="flex ">
-                <CarouselPrevious/>
-                <CarouselNext/>
+                <CarouselPrevious />
+                <CarouselNext />
               </div>
             </div>
-            <CarouselContent className='flex gap-5'>
-                {toolData.map((item, index) => (
-                  <CarouselItem className="basis-1/3 w-full">
-                    <ToolCard
-                      starImg={star}
-                      key={index}
-                      noOfYears={item.noOfYears}
-                      colImage={item.colImage}
-                      imageSrc={item.image}
-                      toolName={item.name}
-                      stars={item.stars}
-                    />
-                  </CarouselItem>
-                ))}
+            <CarouselContent className="flex gap-2">
+              {toolData.map((item, index) => (
+                <CarouselItem className="basis-1/3 w-full">
+                  <ToolCard
+                    starImg={star}
+                    key={index}
+                    noOfYears={item.noOfYears}
+                    colImage={item.colImage}
+                    imageSrc={item.image}
+                    toolName={item.name}
+                    stars={item.stars}
+                  />
+                </CarouselItem>
+              ))}
             </CarouselContent>
           </div>
         </Carousel>

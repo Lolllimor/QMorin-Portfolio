@@ -19,7 +19,7 @@ const Gallery = () => {
         {galleryImages.map((item, idx) => (
           <div className="relative flex h-fit w-fit group" key={idx}>
             <DialogTrigger onClick={() => setActiveImage(item)}>
-              <ExternalLink className="size-[clamp(0.5rem,2vw,1rem)] absolute top-[clamp(0.5rem,2vw,1rem)] left-[clamp(0.5rem,2vw,1rem)]" />
+              <ExternalLink className="size-[clamp(0.5rem,2vw,1.5rem)] absolute top-[clamp(0.5rem,2vw,1rem)] left-[clamp(0.5rem,2vw,1rem)]" />
             </DialogTrigger>
             <DialogContent className="p-0  w-fit flex justify-center items-center rounded-lg h-fit">
               <div className="h-[80vh] w-[80vw]">
@@ -37,15 +37,15 @@ const Gallery = () => {
               alt={item.title}
               height={200}
               width={200}
-              className="rounded-[clamp(0.4rem,2vw,1rem)] w-[clamp(5rem,35vw,24rem)] h-[clamp(15rem,45vw,38rem)]"
+              className="rounded-[clamp(0.4rem,2vw,1rem)] w-full object-cover h-[clamp(15rem,45vw,38rem)]"
             />
             <a
               href={item.hover}
               download={item.title}
               className="cursor-pointer flex items-center absolute bottom-[clamp(0.5rem,2vw,1rem)] right-[clamp(0.5rem,2vw,1rem)] gap-1"
             >
-              <ArrowDownToLine className="size-[clamp(0.5rem,2vw,1rem)]" />
-              <p className="text-[clamp(0.5rem,2vw,1rem)] sm:group-hover:flex sm:hidden font-medium">
+              <ArrowDownToLine className="size-[clamp(0.5rem,2vw,1.5rem)]" />
+              <p className="text-[clamp(0.5rem,2vw,1.2rem)] sm:group-hover:flex sm:hidden font-medium">
                 Download
               </p>
             </a>

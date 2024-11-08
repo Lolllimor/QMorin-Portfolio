@@ -41,7 +41,7 @@ export const SelectedWorks = () => {
       ) : (
         <Carousel>
           <div className="flex flex-col gap-10 w-full">
-            <div className="flex justify-between w-full items-center">
+            <div className="flex justify-between mr-[clamp(0.5rem,6vw,5rem)] items-center">
               <p className="text-[clamp(0.8rem,2vw,1.5rem)]">SELECTED WORKS</p>
               <div className="flex ">
                 <CarouselPrevious />
@@ -49,7 +49,7 @@ export const SelectedWorks = () => {
               </div>
             </div>
 
-            <CarouselContent className="flex gap-5">
+            <CarouselContent className="flex gap-1">
               {selectedWorkData.map((item, idx) => (
                 <CarouselItem className="basis-1/3 w-full">
                   <WorkCard

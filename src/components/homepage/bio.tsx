@@ -1,7 +1,7 @@
 
 export const Bio = () => {
   return (
-    <div className="flex gap-[clamp(0.2rem,5vw,2rem)] w-full max-[500px]:flex-col-reverse items-start py-[clamp(0.5rem,6vw,4.5rem)] border-b border-white">
+    <div className="flex gap-[clamp(0.2rem,5vw,2rem)] max-[500px]:flex-col-reverse items-start py-[clamp(0.5rem,6vw,4.5rem)] border-b border-white mr-[clamp(0.5rem,6vw,5rem)]">
       <p className="text-[clamp(0.5rem,2vw,1.5rem)] w-[48%] max-[500px]:w-full font-light">
         Passionate designer and artist with a concentration in Graphic Design,
         UI/UX Design, 3D Design, Illustration, and Design Strategy. Merging
