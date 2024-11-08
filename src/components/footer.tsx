@@ -5,7 +5,7 @@ import React from 'react';
 export const Footer = () => {
     const pathname = usePathname();
   return (
-    <section className="flex flex-col pt-5 sm:p-6 p-0 w-full h-full sm:mb-0 mb-5">
+    <section className="flex flex-col pt-5 sm:p-6 p-0 h-full sm:mb-0 mb-5 mr-[clamp(0.5rem,6vw,5rem)]">
       <div className="flex flex-col sm:flex-row justify-between border-b border-white sm:h-72 h-full pb-10 sm:pb-0">
         <div className="flex sm:justify-between sm:flex-row sm:w-full flex-col sm:h-full h-fit gap-6 ">
           <div className="flex flex-col gap-[clamp(0.2rem,1vw,0.5rem)]">

@@ -15,6 +15,7 @@ const Work = () => {
             {worksData.map((item, idx) => {
               return (
                 <Link
+                  key={item.title}
                   href={
                     item.title === 'UI/UX Design'
                       ? '/case-study'
