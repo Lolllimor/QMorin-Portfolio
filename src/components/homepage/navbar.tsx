@@ -23,7 +23,7 @@ export const Navbar = () => {
       >
         <Link href="/" className="flex items-center justify-center" passHref>
           <img
-            alt="home"
+            alt="home image"
             className="md:h-[31px] lg:h-[41px] max-[500px]:h-[21px] max-w-fit"
             src="/images/sig.png"
           />
@@ -31,7 +31,7 @@ export const Navbar = () => {
         </Link>
         <ul className="list-none gap-[clamp(0.5rem,0.5vw,1rem)] flex-shrink md:flex hidden">
           {NAV_LINKS.map((item) => (
-            <ol>
+            <li>
               <Link key={item.href} href={item.href} passHref>
                 <Button
                   variant="transparent"
@@ -43,7 +43,7 @@ export const Navbar = () => {
                   {item.label}
                 </Button>
               </Link>
-            </ol>
+            </li>
           ))}
         </ul>
         <Button
