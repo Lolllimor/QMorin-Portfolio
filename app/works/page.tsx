@@ -34,7 +34,7 @@ const Work = () => {
                     <div className="pb-[clamp(0.3rem,2vw,0.8rem)] pl-[clamp(0.4rem,2vw,1.25rem)]">
                       <Image
                         src={item.img}
-                        alt={item.title}
+                        alt={`${item.title} image`}
                         height={32}
                         width={32}
                         className="w-[clamp(2.2rem,6vw,5.5rem)] "

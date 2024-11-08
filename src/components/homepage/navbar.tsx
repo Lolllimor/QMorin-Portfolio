@@ -23,23 +23,27 @@ export const Navbar = () => {
       >
         <Link href="/" className="flex items-center justify-center" passHref>
           <img
+            alt="home"
             className="md:h-[31px] lg:h-[41px] max-[500px]:h-[21px] max-w-fit"
             src="/images/sig.png"
           />
+          <span className="sr-only">Home</span>
         </Link>
         <ul className="list-none gap-[clamp(0.5rem,0.5vw,1rem)] flex-shrink md:flex hidden">
           {NAV_LINKS.map((item) => (
-            <Link key={item.href} href={item.href} passHref>
-              <Button
-                variant="transparent"
-                className={`text-[clamp(0.2rem,1.5vw,1rem)] max-[850px]:pl-0  text-white ${
-                  pathname.includes(item.name) && 'font-bold'
-                }`}
-              >
-                <p className=""></p>
-                {item.label}
-              </Button>
-            </Link>
+            <ol>
+              <Link key={item.href} href={item.href} passHref>
+                <Button
+                  variant="transparent"
+                  className={`text-[clamp(0.2rem,1.5vw,1rem)] max-[850px]:pl-0  text-white ${
+                    pathname.includes(item.name) && 'font-bold'
+                  }`}
+                >
+                  <p className=""></p>
+                  {item.label}
+                </Button>
+              </Link>
+            </ol>
           ))}
         </ul>
         <Button
@@ -52,7 +56,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://drive.google.com/file/d/18m4AO-PBBSi0Cyc0e7h_ZHEhpF_Z-2X5/view?usp=sharing"
-          className=" text-[clamp(0.8rem,1vw,1rem)] !font-bold"
+            className=" text-[clamp(0.8rem,1vw,1rem)] !font-bold"
           >
             View Resume
           </a>

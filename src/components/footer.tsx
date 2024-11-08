@@ -82,7 +82,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               className="cursor-pointer "
             >
-              <img
+              <img alt='instagram'
                 height={32}
                 width={32}
                 className="h-[clamp(1.2rem,3vw,2.1rem)]  sm:h-[clamp(1rem,3vw,2rem)] sm:hover:h-[clamp(1.2rem,5vw,2.2rem)] w-fit transition-all"
@@ -96,7 +96,7 @@ export const Footer = () => {
               className="cursor-pointer"
             >
               <img
-                height={32}
+                height={32} alt='twitter'
                 width={32}
                 className="h-[clamp(1.2rem,3vw,2.1rem)]  sm:h-[clamp(1rem,3vw,2rem)] sm:hover:h-[clamp(1.2rem,5vw,2.2rem)] w-fit transition-all"
                 src="/images/twit.png"
@@ -108,7 +108,7 @@ export const Footer = () => {
               href="https://www.linkedin.com/in/quadmor/"
               className="cursor-pointer"
             >
-              <img
+              <img alt='linkedin'
                 height={32}
                 width={32}
                 className="h-[clamp(1.2rem,3vw,2.1rem)]  sm:h-[clamp(1rem,3vw,2rem)] sm:hover:h-[clamp(1.2rem,5vw,2.2rem)] w-fit transition-all"
@@ -119,7 +119,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className=" gap-[8px] pt-[clamp(1rem,3vw,2.1rem)] sm:flex hidden">
-        <img
+        <img alt='copywright'
           src="/images/copywright.png"
           className="max-h-[16px]"
           height={16}
