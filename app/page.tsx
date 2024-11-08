@@ -10,7 +10,7 @@ import { Works } from '@/src/components/homepage/works';
 
 export default function Home() {
   return (
-    <main>
+    <>
         <Hero />
         <Bio />
         <Works />
@@ -18,6 +18,6 @@ export default function Home() {
         <SelectedWorks />
         <Gallery />
         <Article />
-    </main>
+    </>
   );
 }
